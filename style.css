@@ -13,7 +13,18 @@ body {
   padding-top: 50px;
   padding-right: 850px;
 } */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 
+}
 .image {
   padding-left: 100px;
   align: center ;
@@ -104,6 +115,7 @@ li {
   font-weight: 500;
   font-size: 1rem;
   transition: all 0.3s;
+  animation: blink 1s infinite;
 }
 
 .main-nav-link:hover,
